@@ -1,8 +1,10 @@
+@import './variables.scss';
+
 .searchPage_header {
     display: flex;
     position: sticky;
     top:0;
-    background-color: white;
+    background-color: $white-color;
     z-index: 100;
     align-items: flex-start;
     padding: 30px;
@@ -25,13 +27,13 @@
 .searchPage_options {
     display: flex;
     align-items: center;
-    color: grey;
+    color: $icons-color;
 }
 
 .searchPage_optionsRight a,
 .searchPage_optionsLeft a {
     text-decoration: none ;
-    color: gray;
+    color: $icons-color;
 }
 
 .searchPage_optionsRight,
@@ -58,7 +60,7 @@
 }
 
 .searchPage_resultCount {
-color: #70757a;
+color: $icons-color;
 font-size: 14px;
 }
 

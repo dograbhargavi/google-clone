@@ -40,7 +40,7 @@ function Search({ hideButtons = false}) {
               value={input}
               onChange={captureinput}
                />
-              <MicIcon />
+              <MicIcon className='search_inputIcon'/>
         </div>  
         {!hideButtons ?(
           <div className="search_buttons">

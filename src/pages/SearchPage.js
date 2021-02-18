@@ -77,7 +77,11 @@ function SearchPage() {
         </div>
       </div>
 
+<<<<<<< Updated upstream
       {term && (
+=======
+      {data ? (
+>>>>>>> Stashed changes
         <div className="searchPage_results">
           <p className="searchPage_resultCount">
             About {data.searchInformation?.formattedTotalResults} results (
@@ -100,7 +104,8 @@ function SearchPage() {
             </div>
           ))}
         </div>
-      )}
+      ): <div className="searchPage_results"> NO RESULTS FOUND</div>
+      }
     </div>
   );
 }
