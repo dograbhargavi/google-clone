@@ -1,11 +1,7 @@
 import { useState, useEffect } from 'react'
 import API_KEY from './keys'
 
-<<<<<<< Updated upstream
-const CONTEXT_KEY = 'YOUR_CONTEXT_KEY';
-=======
 const CONTEXT_KEY = 'YOUR_CONTEXT_KEY'; //YOUR_CONTEXT_KEY
->>>>>>> Stashed changes
 
 const useGoogleSearch = (term)=> {
 const [data,setData] = useState(null);

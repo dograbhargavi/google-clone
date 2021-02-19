@@ -17,10 +17,10 @@ function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
 
   // MOCk API CALL
-  const data = Response;
+  // const data = Response;
 
   //LIVE API CALL
-//   const { data } = useGoogleSearch(term);
+  const { data } = useGoogleSearch(term);
 
   console.log("************************", data);
   return (
@@ -76,12 +76,7 @@ function SearchPage() {
           </div>
         </div>
       </div>
-
-<<<<<<< Updated upstream
-      {term && (
-=======
       {data ? (
->>>>>>> Stashed changes
         <div className="searchPage_results">
           <p className="searchPage_resultCount">
             About {data.searchInformation?.formattedTotalResults} results (
