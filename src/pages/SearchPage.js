@@ -83,7 +83,7 @@ function SearchPage() {
             {data?.searchInformation?.formattedSearchTime} seconds) for {term}
           </p>
 
-          {data?.items.map((item,index) => (
+          {data?.items?.map((item,index) => (
             <div className="searchPage_result" key={index}>
               <a href={item.link}>
                 {/* <img 
@@ -97,7 +97,7 @@ function SearchPage() {
               </a>
               <p className="searchPage_result_Snippet">{item.snippet}</p>
             </div>
-          ))}
+          )) || []}
         </div>
       ): <div className="searchPage_results"> NO RESULTS FOUND</div>
       }
